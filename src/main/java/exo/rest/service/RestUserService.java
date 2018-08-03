@@ -257,7 +257,7 @@ public Response UpdateUser (@Context UriInfo uriInfo, @PathParam("id") String id
     CacheControl cacheControl = new CacheControl();       cacheControl.setNoCache(true);
 
     cacheControl.setNoStore(true);
-        
+
 
     OrganizationService organizationService = (OrganizationService) ExoContainerContext.getCurrentContainer()
 
@@ -297,8 +297,8 @@ public Response DeleteUser(@Context UriInfo uriInfo, @PathParam("id") String id)
     UserHandler userHandler = organizationService.getUserHandler();
     try {
 
-        User user = userHandler.findUserByName(id,UserStatus.ANY);
-        if(user != null)  {
+        User u = userHandler.findUserByName(id,UserStatus.ANY);
+        if(u != null)  {
             userHandler.removeUser(id, false);
             return Response.ok("User with the following id "+id+" has been deleted.").build();
         }
@@ -312,9 +312,33 @@ public Response DeleteUser(@Context UriInfo uriInfo, @PathParam("id") String id)
     return Response.ok("DONE!").build();
 }
 
+@GET
+@Path("manage/userstatus/{id}")
+public Response UserStatus (@Context UriInfo uriInfo, @PathParam("id")  String id, UserImpl user)
+{
+    CacheControl cacheControl = new CacheControl();       cacheControl.setNoCache(true);
 
+    cacheControl.setNoStore(true);
+    OrganizationService organizationService = (OrganizationService) ExoContainerContext.getCurrentContainer()
 
+            .getComponentInstanceOfType(OrganizationService.class);
 
+    UserHandler userHandler = organizationService.getUserHandler();
+    try {
+
+        User u = userHandler.findUserByName(id,UserStatus.ANY);
+        if((u != null) && u.isEnabled()){
+            userHandler.setEnabled(id,false, false);
+
+        }
+        else{
+            userHandler.setEnabled(id,true,true);
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return Response.ok("Done").build();
+}
     private boolean isMemberOf(String username, String role) {
 
         ExoContainer container = ExoContainerContext.getCurrentContainer();

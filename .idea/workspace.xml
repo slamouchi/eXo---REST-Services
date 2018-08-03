@@ -4,9 +4,6 @@
     <list default="true" id="b2884f4b-06ec-4cb3-a9d9-6e81654e2881" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/exo/rest/service/RestUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/exo/rest/service/RestUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/exo/rest/service/RestUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/exo/rest/service/RestUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/docs-restdemo-jaxrs-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/docs-restdemo-jaxrs-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,36 +17,39 @@
     <session id="-1306561738">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.50" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="2514" />
+          <entry key="class" value="4" />
+          <entry key="java" value="2868" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2514" />
+          <entry key="CLASS" value="4" />
+          <entry key="JAVA" value="2868" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="16" />
+          <entry key="class" value="24" />
           <entry key="java" value="1" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="16" />
+          <entry key="CLASS" value="24" />
           <entry key="JAVA" value="1" />
           <entry key="XML" value="1" />
         </counts>
@@ -61,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="1054">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
@@ -70,8 +70,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/exo/rest/service/RestUserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="259" selection-end-column="8" />
+            <state relative-caret-position="-185">
+              <caret line="315" column="28" lean-forward="true" selection-start-line="315" selection-start-column="28" selection-end-line="315" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,19 +80,41 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/ws/exo.ws.rest.core/2.3.7-GA/exo.ws.rest.core-2.3.7-GA.jar!/org/exoplatform/services/rest/impl/method/DefaultMethodInvoker.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/User.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="158" selection-start-line="158" selection-end-line="158" />
+            <state relative-caret-position="447">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/kernel/exo.kernel.commons/2.4.7-GA/exo.kernel.commons-2.4.7-GA.jar!/org/exoplatform/commons/utils/SecurityHelper.class">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/impl/UserImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="134" column="24" selection-start-line="134" selection-start-column="24" selection-end-line="134" selection-end-column="24" />
+            <state relative-caret-position="-656">
+              <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="66" />
+              <folding>
+                <element signature="e#3379#3380#0" expanded="true" />
+                <element signature="e#3417#3418#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/OrganizationService.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserProfileHandler.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -100,8 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserHandler.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+            <state relative-caret-position="298">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -109,7 +131,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/impl/mock/DummyOrganizationService.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
+            <state relative-caret-position="-997">
               <caret line="276" column="35" selection-start-line="276" selection-start-column="27" selection-end-line="276" selection-end-column="35" />
             </state>
           </provider>
@@ -118,39 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/cache/CacheableUserHandlerImpl.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-              <folding>
-                <element signature="e#2136#2137#0" expanded="true" />
-                <element signature="e#2204#2205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/Query.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/User.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/conf/portal/configuration.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="152">
+              <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -199,7 +190,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -245,12 +236,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533220252788" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../gamification/pom.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533292294043" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -298,7 +289,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.25189108" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4942717" visible="true" weight="0.25567323" />
       <window_info id="Structure" order="1" sideWeight="0.5057283" side_tool="true" weight="0.2526475" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -308,7 +299,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3764321" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3764321" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -360,12 +351,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/exo/rest/service/RestUserService.java</url>
-          <line>292</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/exo/rest/service/RestUserService.java</url>
           <line>221</line>
           <properties />
           <option name="timeStamp" value="16" />
@@ -381,6 +366,12 @@
           <line>268</line>
           <properties />
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/exo/rest/service/RestUserService.java</url>
+          <line>328</line>
+          <properties />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -445,24 +436,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/OrganizationService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/conf/portal/configuration.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserStatus.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -473,49 +450,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/User.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/ws/exo.ws.rest.core/2.3.7-GA/exo.ws.rest.core-2.3.7-GA.jar!/org/exoplatform/services/rest/impl/method/DefaultMethodInvoker.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="9" column="18" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="21" />
+        <state relative-caret-position="237">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/cache/CacheableUserHandlerImpl.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/MembershipTypeHandler.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
-          <folding>
-            <element signature="e#2136#2137#0" expanded="true" />
-            <element signature="e#2204#2205#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="374">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserProfile.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="1054">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserHandler.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/impl/mock/DummyOrganizationService.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="276" column="35" selection-start-line="276" selection-start-column="27" selection-end-line="276" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/ws/exo.ws.rest.core/2.3.7-GA/exo.ws.rest.core-2.3.7-GA.jar!/org/exoplatform/services/rest/impl/method/DefaultMethodInvoker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="158" selection-start-line="158" selection-end-line="158" />
         </state>
       </provider>
     </entry>
@@ -526,10 +485,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/impl/mock/DummyOrganizationService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-997">
+          <caret line="276" column="35" selection-start-line="276" selection-start-column="27" selection-end-line="276" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/OrganizationService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/cache/CacheableUserHandlerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="59" column="55" selection-start-line="59" selection-start-column="55" selection-end-line="59" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/UserProfileHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/User.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/exoplatform/core/exo.core.component.organization.api/2.6.0-GA/exo.core.component.organization.api-2.6.0-GA.jar!/org/exoplatform/services/organization/impl/UserImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-656">
+          <caret line="57" column="5" lean-forward="true" selection-start-line="57" selection-start-column="5" selection-end-line="66" />
+          <folding>
+            <element signature="e#3379#3380#0" expanded="true" />
+            <element signature="e#3417#3418#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/exo/rest/service/RestUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="259" column="8" selection-start-line="259" selection-start-column="8" selection-end-line="259" selection-end-column="8" />
+        <state relative-caret-position="-185">
+          <caret line="315" column="28" lean-forward="true" selection-start-line="315" selection-start-column="28" selection-end-line="315" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
