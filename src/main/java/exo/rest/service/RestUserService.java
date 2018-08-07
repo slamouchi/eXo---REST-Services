@@ -1,10 +1,26 @@
 package exo.rest.service;
 
 
+
 import javax.ws.rs.*;
 
-import javax.ws.rs.core.*;
+import org.exoplatform.services.jcr.core.ManageableRepository;
+import org.exoplatform.services.jcr.ext.common.SessionProvider;
 
+import javax.ws.rs.core.*;
+import javax.jcr.Node;
+
+import javax.jcr.Session;
+
+import javax.ws.rs.GET;
+
+import javax.ws.rs.Path;
+
+import javax.ws.rs.PathParam;
+
+import org.exoplatform.services.jcr.RepositoryService;
+
+import org.exoplatform.services.jcr.ext.app.ThreadLocalSessionProviderService;
 
 import javax.annotation.security.RolesAllowed;
 
@@ -15,6 +31,10 @@ import org.exoplatform.container.ExoContainer;
 
 import org.exoplatform.container.ExoContainerContext;
 
+import org.exoplatform.services.jcr.ext.common.SessionProvider;
+
+import org.exoplatform.services.log.ExoLogger;
+import org.exoplatform.services.log.Log;
 import org.exoplatform.services.organization.*;
 
 import org.exoplatform.services.organization.impl.UserImpl;
@@ -28,6 +48,9 @@ import org.json.JSONArray;
 
 import org.json.JSONObject;
 
+import java.util.Calendar;
+import java.util.Date;
+
 
 /**
 
@@ -40,6 +63,18 @@ import org.json.JSONObject;
 
 public class RestUserService implements ResourceContainer {
 
+
+    private static final Log log = ExoLogger.getLogger(RestUserService.class);
+
+    private static final String LOGIN_HISTORY_HOME = "exo:LoginHistoryHome";
+    private static final String LAST_LOGIN_TIME = "exo:LoginHisSvc_lastLogin";
+    private Session getSession(SessionProvider sessionProvider) throws Exception {
+        RepositoryService repositoryService_ = (RepositoryService) ExoContainerContext.getCurrentContainer()
+
+                .getComponentInstanceOfType(RepositoryService.class);
+        ManageableRepository currentRepo = repositoryService_.getCurrentRepository();
+        return sessionProvider.getSession(currentRepo.getConfiguration().getDefaultWorkspaceName(), currentRepo);
+    }
 
     @GET
 
@@ -327,7 +362,7 @@ public Response UserStatus (@Context UriInfo uriInfo, @PathParam("id")  String i
     try {
 
         User u = userHandler.findUserByName(id,UserStatus.ANY);
-        if((u != null) && u.isEnabled()){
+        if(!u.getUserName().equals("root") && u.isEnabled()){
             userHandler.setEnabled(id,false, false);
 
         }
@@ -339,6 +374,49 @@ public Response UserStatus (@Context UriInfo uriInfo, @PathParam("id")  String i
     }
     return Response.ok("Done").build();
 }
+
+@GET
+@Path("/manage/userstatus/bylastlogtime/{time}")
+public Response UserStatutsByLastLogTime(@Context UriInfo uriInfo, @PathParam("time") long time)
+{
+
+    SessionProvider sProvider = SessionProvider.createSystemProvider();
+
+    OrganizationService organizationService = (OrganizationService) ExoContainerContext.getCurrentContainer()
+
+            .getComponentInstanceOfType(OrganizationService.class);
+
+    UserHandler userHandler = organizationService.getUserHandler();
+    User[] users = null;
+    try {
+
+        Date d = new Date(time);
+        ListAccess<User> allUsers = userHandler.findAllUsers();
+
+        Session session = getSession(sProvider);
+
+        Node homeNode = session.getRootNode().getNode(LOGIN_HISTORY_HOME);
+        for (int i = 0; i < allUsers.getSize(); i++) {
+
+            users = allUsers.load(i,allUsers.getSize());
+            Node userNode = homeNode.getNode(users[i].getUserName());
+            long lastLogin = userNode.getProperty(LAST_LOGIN_TIME).getLong();
+
+            if (!users[i].getUserName().equals("root") && lastLogin <= time)
+            {log.info("User " + users[i] + " Last login: " + (new Date(lastLogin)) );
+
+            }
+            else
+                log.info("No users have logged in before " + (new Date(time)) );
+            sProvider.close();
+        }
+
+}catch (Exception e) {
+        e.printStackTrace();
+    }
+    return Response.ok("DONE").build();
+}
+
     private boolean isMemberOf(String username, String role) {
 
         ExoContainer container = ExoContainerContext.getCurrentContainer();

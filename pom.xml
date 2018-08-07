@@ -60,6 +60,11 @@
             <scope>provided</scope>
 
         </dependency>
+        <dependency>
+            <groupId>org.exoplatform.jcr</groupId>
+            <artifactId>exo.jcr.component.ext</artifactId>
+            <version>5.1.x-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
